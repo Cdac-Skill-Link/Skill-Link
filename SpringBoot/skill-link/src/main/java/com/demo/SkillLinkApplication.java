@@ -1,4 +1,4 @@
-package com.skill_link;
+package com.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
