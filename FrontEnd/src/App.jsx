@@ -9,12 +9,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import { Contact } from './components/contact';
 // // import UserLogin from './components/Login';
 // // import App5 from './Login page/App5';
-// import Login from './components/UserLogin';
+
 // import Registration from './components/userRegistration';
 // import ServiceLogin from './components/serviceProviderLogin';
 // import { ServiceList } from './components/Loginservices/ServiceList';
 // import JsonData from "./data/data.json";
 import LandingPage from "./components/Landingpage";
+import Login from './components/UserLogin';
 // import ServiceForm from './components/Loginservices/ServiceForm';
 // import ServiceRegistration from "./components/serviceProviderRegistration"
 // import ServiceTable from './components/ServiceProvider/ServiceList';
@@ -29,12 +30,38 @@ import LandingPage from "./components/Landingpage";
 
 const App = () => {
 
+  const AuthorizedService=()=>{
+    const status=sessionStorage["status"]
+    return status==="success" ? <ServiceList/> : <Login/>
+  }
+
+  const Authorizedrequest=()=>{
+    const status=sessionStorage["status"]
+    return status==="success" ? <ServiceList/> :<Login/>
+  }
+  const Authorizedserviceform=()=>{
+    const status=sessionStorage["status"]
+    return status==="success"?<ServiceForm/>:<Login/>
+  }
+  const AuthorizedBookingList=()=>{
+    const status=sessionStorage["status"]
+    return status==="success"?<BookingTable/>:<Login/>
+  }
+  const Authorizedserviceprovider=()=>{
+    const status=sessionStorage["status"]
+    return status ==="ServiceLoginsuccess"?<ServiceproviderPage/>:<ServiceLogin/>
+  }
+  const AuthorizedconfirmTable=()=>{
+    const status=sessionStorage["status"]
+    return status==="ServiceLoginsuccess"?<ServiceproviderPage/>:<ConfirmTable/>
+  }
 
 
   return (
     <div>
 <BrowserRouter>
     <Routes>
+    
     <Route path="/" element={<LandingPage></LandingPage>}/>
       <Route path="login" element={<Login></Login>}/> 
       <Route path="register" element={<Registration></Registration>}/>
