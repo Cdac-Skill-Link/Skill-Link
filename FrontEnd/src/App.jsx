@@ -2,7 +2,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import './index.css';
 
 // import * as serviceWorker from './serviceWorker';
@@ -14,7 +14,7 @@ import ReactDOM from 'react-dom';
 // import ServiceLogin from './components/serviceProviderLogin';
 // import { ServiceList } from './components/Loginservices/ServiceList';
 // import JsonData from "./data/data.json";
-// import LandingPage from "./components/Landingpage";
+import LandingPage from "./components/Landingpage";
 // import ServiceForm from './components/Loginservices/ServiceForm';
 // import ServiceRegistration from "./components/serviceProviderRegistration"
 // import ServiceTable from './components/ServiceProvider/ServiceList';
@@ -33,8 +33,26 @@ const App = () => {
 
   return (
     <div>
-   
-      <h1>Skill Link</h1>
+<BrowserRouter>
+    <Routes>
+    <Route path="/" element={<LandingPage></LandingPage>}/>
+      <Route path="login" element={<Login></Login>}/> 
+      <Route path="register" element={<Registration></Registration>}/>
+      {/* <Route path="login" element={<ServiceLogin></ServiceLogin>}></Route> */}
+      <Route path="/servicelist" element={<AuthorizedService/>}/>
+      <Route path="/servicerequest" element={<Authorizedrequest/>}/>
+      <Route path="/serviceform" element={<Authorizedserviceform/>}/>
+      <Route path="/serviceprovider" element={<ServiceLogin></ServiceLogin>}/>
+      <Route path="/ServiceProviderregister" element={<ServiceRegistration></ServiceRegistration>}/>
+      <Route path="/data"   element={<Authorizedserviceprovider/>}/>
+      <Route path="/bookedservices" element={<AuthorizedBookingList/>}/>
+      <Route path="/confirmList" element={<ConfirmTable/>}/>
+      <Route path="/forgotpassword" element={<ForgotPassword/>}/>
+      <Route path="/feedback/:id/:name" element={<FeedbackForm/>}/>
+      <Route path="/seviceforgotpass" element={<ServiceForgotPassword/>}/>
+    </Routes>
+    </BrowserRouter> 
+
     </div>
   );
 };
