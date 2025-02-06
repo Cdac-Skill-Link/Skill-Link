@@ -10,7 +10,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // // import UserLogin from './components/Login';
 // // import App5 from './Login page/App5';
 
-// import Registration from './components/userRegistration';
+import Registration from './components/userRegistration';
 // import ServiceLogin from './components/serviceProviderLogin';
 // import { ServiceList } from './components/Loginservices/ServiceList';
 // import JsonData from "./data/data.json";
