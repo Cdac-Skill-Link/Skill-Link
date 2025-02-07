@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './ForgotPassword.css'; // Import your CSS file
 import { useNavigate } from 'react-router-dom';
+import { Navigate } from './navigate';
 // ... (import statements)
 
 const ForgotPassword = () => {
@@ -37,8 +38,10 @@ const ForgotPassword = () => {
   };
 
   return (
+    <>
+    <Navigate></Navigate>
     <center>
-      <div className="forgot-password-container">
+      <div className="forgot-password-container" style={{marginTop:"50px"}}>
         <div className="forgot-password-card">
           <h2>Forgot Password</h2>
           <form onSubmit={handleSubmit}>
@@ -62,6 +65,7 @@ const ForgotPassword = () => {
         </div>
       </div>
     </center>
+    </>
   );
 };
 
