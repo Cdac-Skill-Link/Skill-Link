@@ -62,10 +62,10 @@ const App = () => {
 <BrowserRouter>
     <Routes>
     
-      <Route path="/" element={<LandingPage></LandingPage>}/>
+    <Route path="/" element={<LandingPage></LandingPage>}/>
       <Route path="login" element={<Login></Login>}/> 
       <Route path="register" element={<Registration></Registration>}/>
-    
+      {/* <Route path="login" element={<ServiceLogin></ServiceLogin>}></Route> */}
       <Route path="/servicelist" element={<AuthorizedService/>}/>
       <Route path="/servicerequest" element={<Authorizedrequest/>}/>
       <Route path="/serviceform" element={<Authorizedserviceform/>}/>
@@ -77,7 +77,6 @@ const App = () => {
       <Route path="/forgotpassword" element={<ForgotPassword/>}/>
       <Route path="/feedback/:id/:name" element={<FeedbackForm/>}/>
       <Route path="/seviceforgotpass" element={<ServiceForgotPassword/>}/>
-   
     </Routes>
     </BrowserRouter> 
 
