@@ -71,7 +71,8 @@ const ServiceRegistration = () => {
 
   return (
     <div className="login-main" style={{ display: "flex" }}>
-      <div className="login-left" style={{ width: "50%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", padding: "20px", boxSizing: "border-box" }}>
+      <div className="login-left" style={{ width:
+         "50%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", padding: "20px", boxSizing: "border-box" }}>
         <h2>Earn More with</h2>
         <h2> Skill🔗Link</h2>
         <img src={Image} alt="" style={{ maxWidth: "100%", height: "auto", objectFit: "contain" }} />
