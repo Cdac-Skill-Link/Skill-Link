@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.demo.Repo.BookingListDao;
 import com.demo.model.BookingList;
 import com.demo.service.BookingListService;
 
