@@ -1,5 +1,7 @@
 package com.demo.model;
 
+
+
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -10,7 +12,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import javax.persistence.UniqueConstraint;
+
+
 
 @Entity
 @Table(name="users")

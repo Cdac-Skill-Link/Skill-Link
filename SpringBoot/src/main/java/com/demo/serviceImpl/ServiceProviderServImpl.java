@@ -1,13 +1,17 @@
 package com.demo.serviceImpl;
 
+
+
 import java.util.List;
 
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.demo.dao.ServiceProviderDao;
+
+import com.demo.Repo.ServiceProviderDao;
 import com.demo.model.ServiceProvider;
+import com.demo.service.ServiceProviderServ;
 
 @Service
 public class ServiceProviderServImpl implements ServiceProviderServ{
