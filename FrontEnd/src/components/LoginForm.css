@@ -214,3 +214,9 @@ form button[type='submit'] {
   text-decoration: underline;
 }
 
+.error {
+  color: red;
+  font-size: 1px;
+  margin-top: 1px;
+}
+
