@@ -9,13 +9,13 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
-<<<<<<< HEAD
+
 .error {
   color: red;
   font-size: 14px;
   margin-top: 5px;
   display: block;
-=======
+
 .login-main {
   display: flex;
   width: 100%;
@@ -162,7 +162,7 @@ button:hover {
   position: absolute;
   right: 10px;
   cursor: pointer;
->>>>>>> e762cfea03e4371003acdf392d4a3fc6c3dba66e
+
 }
 
 body {
@@ -6910,4 +6910,3 @@ button.close {
     display: none !important;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
