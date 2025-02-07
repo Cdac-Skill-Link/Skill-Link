@@ -1,6 +1,9 @@
 package com.demo.serviceImpl;
 
+
 import java.util.List;
+
+import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -8,8 +11,6 @@ import org.springframework.stereotype.Service;
 import com.demo.Repo.UserDao;
 import com.demo.model.User;
 import com.demo.service.UserService;
-
-import jakarta.transaction.Transactional;
 
 
 @Service
