@@ -1,11 +1,12 @@
-package com.demo.service;
+package com.demo.serviceImpl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.demo.dao.UserRequirementDao;
+import com.demo.Repo.UserRequirementDao;
 import com.demo.model.UserRequirement;
+import com.demo.service.UserRequirementService;
 
 
 @Service
