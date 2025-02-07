@@ -4,6 +4,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa6";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./LoginForm.css";
+import "./userRegistration.css";
 
 const Registration = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -123,7 +124,7 @@ const Registration = () => {
                 </div>
               ))}
 
-              <div className="input-group">
+          <div className="input-group">
                 <div className="pass-input-div">
                   <input
                     type={showPassword ? "text" : "password"}
