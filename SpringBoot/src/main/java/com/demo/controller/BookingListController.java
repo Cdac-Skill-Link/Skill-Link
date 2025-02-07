@@ -2,6 +2,8 @@ package com.demo.controller;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -15,8 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.demo.model.BookingList;
 import com.demo.service.BookingListService;
-
-import jakarta.transaction.Transactional;
 
 @RequestMapping("/bookingList")
 @RestController
