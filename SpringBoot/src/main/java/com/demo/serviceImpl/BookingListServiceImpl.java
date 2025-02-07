@@ -2,14 +2,15 @@ package com.demo.serviceImpl;
 
 import java.util.List;
 
-import javax.transaction.Transactional;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import com.demo.dao.BookingListDao;
 import com.demo.model.BookingList;
+import com.demo.service.BookingListService;
+
+import jakarta.transaction.Transactional;
+
+
 @Service
 public class BookingListServiceImpl implements BookingListService {
 	
