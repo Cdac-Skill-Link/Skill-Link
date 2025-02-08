@@ -99,6 +99,14 @@ public class UserController {
 	
 	
 	
+	@GetMapping("/getUserRequirements/{uid}")
+	public ResponseEntity<List<UserRequirement>> getAllRequest(@PathVariable int uid){
+		System.out.println("inside getAll");
+		List<UserRequirement>ulist=userRequire.getallRequest( uid);
+		if(ulist.isEmpty())
+			return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+		return ResponseEntity.ok(ulist);
+	}
 	
 	
 	
