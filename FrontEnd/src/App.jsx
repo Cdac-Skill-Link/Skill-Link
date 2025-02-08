@@ -91,7 +91,7 @@ const App = () => {
       <Route path="/confirmList" element={<ConfirmTable/>}/>
       <Route path="/forgotpassword" element={<ForgotPassword/>}/>
       <Route path="/feedback/:id/:name" element={<FeedbackForm/>}/>
-      <Route path="/seviceforgotpass" element={<ServiceForgotPassword/>}/>
+      <Route path="/serviceforgotpass" element={<ServiceForgotPassword/>}/>
     </Routes>
     </BrowserRouter> 
 
