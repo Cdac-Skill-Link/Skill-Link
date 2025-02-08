@@ -1,7 +1,7 @@
 package com.demo.controller;
 
 import java.util.List;
-
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -90,12 +90,23 @@ public class UserController {
 		return ResponseEntity.ok("success");
 	}
 	
-	@PostMapping("/change/{uid}")
-	public ResponseEntity<?> changepass(@PathVariable String uid,@RequestBody String newpass){
-		userservice.changepass(uid,newpass);
-		
-		return ResponseEntity.ok("success");
-	}
+//	@PostMapping("/change/{uid}")
+//	public ResponseEntity<?> changepass(@PathVariable String uid,@RequestBody String newpass){
+//		userservice.changepass(uid,newpass);
+//		
+//		return ResponseEntity.ok("success");
+//	}
+//	//Rewrite by SDLokare. 
+	
+	 @PostMapping("/change")
+	    public ResponseEntity<String> changePassword(@RequestBody Map<String, String> request) {
+	        String email = request.get("email");
+	        String newPassword = request.get("password");
+
+	        // Your implementation...
+	        userservice.changepass(email,newPassword);
+	        return ResponseEntity.ok("Password changed successfully");
+	    }
 	
 	
 	
