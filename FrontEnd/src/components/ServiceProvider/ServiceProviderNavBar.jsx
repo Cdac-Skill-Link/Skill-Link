@@ -16,6 +16,9 @@ export const ServiceProviderNavbar = () => {
             <div className="container">
                 <div className="navbar-header">
                     {/* Skill🔗Finder on the left */}
+                    <a className="navbar-brand page-scroll brand-spacing" href="/data" style={{marginRight: "15px"}}>
+                        <i class="fa fa-arrow-circle-o-left fa-lg" aria-hidden="true"></i>
+                        </a>
                     <a className="navbar-brand brand-spacing" href="#page-top">
                         Skill🔗Finder
                     </a>

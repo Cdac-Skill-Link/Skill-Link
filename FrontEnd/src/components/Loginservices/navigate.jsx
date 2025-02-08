@@ -14,10 +14,16 @@ export const Navigate = () => {
 
     return (
         <>
+        
             <nav id="menu" className="navbar navbar-default navbar-fixed-top">
+            
                 <div className="container">
+                    
                     <div className="navbar-header">
                         {/* Skill🔗Finder logo with spacing */}
+                        <a className="navbar-brand page-scroll brand-spacing" href="/ServiceList" style={{marginRight: "15px"}}>
+                        <i class="fa fa-arrow-circle-o-left fa-lg" aria-hidden="true"></i>
+                        </a>
                         <a className="navbar-brand page-scroll brand-spacing" href="#page-top">
                             Skill🔗Finder
                         </a>
