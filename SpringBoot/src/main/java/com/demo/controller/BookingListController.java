@@ -45,6 +45,9 @@ public class BookingListController {
 				
 				return ResponseEntity.ok("success");
 		}
+		
+		
+		
 		@PostMapping("/status/{rid}")
 		public ResponseEntity<?>adduser(@PathVariable int rid,@RequestBody String s){
 			System.out.println(rid+ s);
@@ -58,5 +61,24 @@ public class BookingListController {
 			bookingListserv.removedata(id);
 			return ResponseEntity.ok("success");
 		}
+		
+		
+		
+		
+		
+		
+		@PostMapping("/updateStatuses/{bookingId}/{requirementId}")
+		public ResponseEntity<?> updateStatuses(@PathVariable int bookingId, @PathVariable int requirementId) {
+		    bookingListserv.updateOtherStatuses(requirementId, bookingId);
+		    return ResponseEntity.ok("Updated other bookings to failure");
+		}
+		
+		@GetMapping("/getStatus/{bookingId}")
+		public ResponseEntity<String> getStatus(@PathVariable int bookingId) {
+		    String status = bookingListserv.getStatusByBookingId(bookingId);
+		    return ResponseEntity.ok(status);
+		}
+
+
 }
 

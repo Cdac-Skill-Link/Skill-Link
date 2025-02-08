@@ -57,13 +57,21 @@ public class BookingListServiceImpl implements BookingListService {
 	}
 
 
-
 	
-
 	
-
 	
-
 	
-		
+	@Override
+	@Transactional
+	public void updateOtherStatuses(int requirementId, int bookingId) {
+	    int rowsAffected = bookdao.updateOtherStatuses(requirementId, bookingId);
+	    System.out.println("Other rows updated to failure: " + rowsAffected);
+	}
+	
+	@Override
+	public String getStatusByBookingId(int bookingId) {
+	    return bookdao.getStatusByBookingId(bookingId);
+	}
+
+
 }

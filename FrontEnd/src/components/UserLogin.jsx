@@ -80,7 +80,7 @@ const Login = () => {
           </div>
           <div className="login-center">
             <h2>Welcome to Skill🔗Finder</h2>
-            <p>Please enter your details</p>
+            <p>Please enter your details User!</p>
             <form onSubmit={handleSubmit}>
               <div>
                 <input
@@ -105,8 +105,9 @@ const Login = () => {
                 ) : (
                   <FaEye onClick={() => setShowPassword(!showPassword)} />
                 )}
-                {errors.password && <span className="error-message">{errors.password}</span>}
+               
               </div>
+              {errors.password && <span className="error-message">{errors.password}</span>}
 
               <div className="login-center-options">
                 <a href="forgotpassword" className="forgot-pass-link">
