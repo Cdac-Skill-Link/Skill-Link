@@ -13,6 +13,8 @@ public interface UserRequirementService {
 	UserRequirement getdata(int reqid);
 
 	
+	
+	List<UserRequirement> getallRequest(int userid);
 
 	
 

@@ -44,6 +44,11 @@ export const Navigate = (props) => {
               </a>
             </li>
             <li>
+              <a href="RequestService" className="page-scroll">
+                Requested Services
+              </a>
+            </li>
+            <li>
               <a href="bookedservices" className="page-scroll">
                 Booked Services
               </a>

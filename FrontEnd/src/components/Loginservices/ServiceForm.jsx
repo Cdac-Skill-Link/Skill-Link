@@ -67,7 +67,7 @@ const ServiceForm = () => {
 
         try {
             await axios.post('http://localhost:7373/skilllink/insertUserRequirement', formData);
-            navigate("/servicelist");
+            navigate("/RequestService");
         } catch (error) {
             console.error("Error submitting form:", error);
             alert("An error occurred. Please try again later.");

@@ -14,5 +14,9 @@ public interface UserRequirementDao extends JpaRepository<UserRequirement, Integ
 	UserRequirement getData(int reqid);
 	
 	
+	@Query(value="select * from userrequirements where Userid=:userid" ,nativeQuery=true)
+	List<UserRequirement> getallRequest(int userid);
+	
+	
 
 }
