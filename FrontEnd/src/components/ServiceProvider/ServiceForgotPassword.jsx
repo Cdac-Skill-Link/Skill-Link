@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import '../Loginservices/ForgotPassword.css'; // Import your CSS file
 import { useNavigate } from 'react-router-dom';
+import { Navigation } from '../navigation';
+import { ServiceProviderNavbar } from './ServiceProviderNavBar';
 // ... (import statements)
 
 const ServiceForgotPassword = () => {
@@ -41,6 +43,8 @@ const ServiceForgotPassword = () => {
   };
 
   return (
+    <>
+    <ServiceProviderNavbar/>
     <center>
       <div className="forgot-password-container">
         <div className="forgot-password-card">
@@ -66,6 +70,7 @@ const ServiceForgotPassword = () => {
         </div>
       </div>
     </center>
+    </>
   );
 };
 

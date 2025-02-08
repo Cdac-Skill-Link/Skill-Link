@@ -3,6 +3,7 @@ import axios from 'axios';
 import './ForgotPassword.css'; // Import your CSS file
 import { useNavigate } from 'react-router-dom';
 import { Navigate } from './navigate';
+import { Navigation } from '../navigation';
 // ... (import statements)
 
 const ForgotPassword = () => {
@@ -39,7 +40,7 @@ const ForgotPassword = () => {
 
   return (
     <>
-    <Navigate></Navigate>
+    <Navigate/>
     <center>
       <div className="forgot-password-container" style={{marginTop:"50px"}}>
         <div className="forgot-password-card">
