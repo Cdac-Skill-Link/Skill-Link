@@ -1,0 +1,6 @@
+.error {
+  font-size: 12px; /* Smaller font size */
+  color: red;
+  margin-top: 3px;
+  text-align: left;
+}

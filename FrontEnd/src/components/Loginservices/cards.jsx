@@ -17,7 +17,7 @@ export const Service = (props) => {
                   {/* <i className={d.icon}></i> */}
                   <div className="service-desc">
                     <img src={d.img}></img>
-                    <h3>{d.name}</h3>
+                    <a href="ServiceForm">  <h3>{d.name}</h3> </a>
                     <p>{d.text}</p>
                   </div>
                 </div>

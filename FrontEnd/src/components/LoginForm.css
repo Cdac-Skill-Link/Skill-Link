@@ -214,3 +214,15 @@ form button[type='submit'] {
   text-decoration: underline;
 }
 
+.error {
+  color: red;
+  font-size: 1px;
+  margin-top: 1px;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
