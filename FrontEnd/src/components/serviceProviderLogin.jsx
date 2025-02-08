@@ -90,7 +90,7 @@ const ServiceLogin = () => {
             <img src={Logo} alt="Logo" />
           </div>
           <div className="login-center">
-            <h2>Welcome to Skill🔗Link</h2>
+            <h2>Welcome to Skill🔗Finder</h2>
             <p>Please enter your details</p>
             <form onSubmit={handleSubmit}>
               <div>
