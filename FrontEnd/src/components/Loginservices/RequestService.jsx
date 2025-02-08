@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import "./RequestService.css";
+import { Navigate } from "./navigate";
 
 const RequestService = () => {
     const [services, setServices] = useState([]);
@@ -25,6 +26,8 @@ const RequestService = () => {
     }, []);
 
     return (
+        <>
+        <Navigate/>
         <center className="service-center">
             <h1>Skill🔗Link</h1>
             <h3>Your Service Requests</h3>
@@ -59,6 +62,7 @@ const RequestService = () => {
                 </div>
             )}
         </center>
+        </>
     );
 };
 
