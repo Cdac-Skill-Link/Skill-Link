@@ -91,12 +91,12 @@ export default function BookingTable() {
 
   return (
     <div>
-       <BookingNavbar/>
+       <Navigate/>
         <br/>
         <br/>
         <br/>
     
-    <center>
+    <center style={{marginTop:"40px"}}>
     <h3 >Service Provider List who accepted your request</h3> 
     </center>
     {/* <Link to="/form">

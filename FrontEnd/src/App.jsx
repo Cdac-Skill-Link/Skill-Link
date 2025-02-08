@@ -26,6 +26,8 @@ import ConfirmTable from './components/ServiceProvider/ConfirmList';
 import ForgotPassword from './components/Loginservices/forgotPassword';
 import FeedbackForm from './components/Loginservices/Rating';
 import ServiceForgotPassword from './components/ServiceProvider/ServiceForgotPassword';
+import { Navigation } from './components/navigation';
+import RequestService from './components/Loginservices/RequestService';
 
 
 const App = () => {
@@ -47,6 +49,14 @@ const App = () => {
     const status=sessionStorage["status"]
     return status==="success"?<BookingTable/>:<Login/>
   }
+
+
+  const AuthorizedRequestList=()=>{
+    const status=sessionStorage["status"]
+    return status==="success"?<RequestService/>:<Login/>
+  }
+
+
   const Authorizedserviceprovider=()=>{
     const status=sessionStorage["status"]
     return status ==="ServiceLoginsuccess"?<ServiceproviderPage/>:<ServiceLogin/>
@@ -61,7 +71,9 @@ const App = () => {
     <div>
 <BrowserRouter>
     <Routes>
-    
+
+
+
     <Route path="/" element={<LandingPage></LandingPage>}/>
       <Route path="login" element={<Login></Login>}/> 
       <Route path="register" element={<Registration></Registration>}/>
@@ -72,6 +84,9 @@ const App = () => {
       <Route path="/serviceprovider" element={<ServiceLogin></ServiceLogin>}/>
       <Route path="/ServiceProviderregister" element={<ServiceRegistration></ServiceRegistration>}/>
       <Route path="/data"   element={<Authorizedserviceprovider/>}/>
+
+      <Route path="/RequestService" element={<AuthorizedRequestList/>}/>
+
       <Route path="/bookedservices" element={<AuthorizedBookingList/>}/>
       <Route path="/confirmList" element={<ConfirmTable/>}/>
       <Route path="/forgotpassword" element={<ForgotPassword/>}/>

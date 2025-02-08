@@ -35,4 +35,11 @@ public class UserRequirementServiceImpl implements UserRequirementService{
 
 	
 	
+	
+	@Override
+	public List<UserRequirement> getallRequest(int userid) {
+		// TODO Auto-generated method stub
+		return userrequiredao.getallRequest(userid);
+	}
+	
 }

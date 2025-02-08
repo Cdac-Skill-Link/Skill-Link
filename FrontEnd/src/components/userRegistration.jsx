@@ -94,11 +94,11 @@ const Registration = () => {
   };
 
   return (
-    <div className="login-main">
+    <div className="login-main"style={{    height: "auto "}}>
       <div className="login-left">
         <img src={Image} alt="SkillLink" />
       </div>
-      <div className="login-right">
+      <div className="login-right" style={{    height: "auto "}}>
         <div className="login-right-container">
           <div className="login-center">
             <h2>Register to Skill🔗Link</h2>
