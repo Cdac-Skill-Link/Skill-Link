@@ -25,5 +25,15 @@ public interface BookingListDao extends JpaRepository<BookingList, Integer> {
 	@Modifying
 	@Query(value = "delete from userrequirements where reuirement_id=:id", nativeQuery = true)
 	int removedata(int id);
+	
+	
+	
+	@Modifying
+	@Query(value = "UPDATE BookingList SET status='failure' WHERE requirement_id=:requirementId AND bookingid != :bookingId", nativeQuery = true)
+	int updateOtherStatuses(int requirementId, int bookingId);
+
+	@Query(value = "SELECT status FROM BookingList WHERE bookingid=:bookingId", nativeQuery = true)
+	String getStatusByBookingId(int bookingId);
+
 
 }

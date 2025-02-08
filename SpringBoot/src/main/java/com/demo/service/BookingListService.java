@@ -19,5 +19,11 @@ public interface BookingListService {
 	void removedata(int id);
 
 	
+	
+	void updateOtherStatuses(int requirementId, int bookingId);
+	
+	String getStatusByBookingId(int bookingId);
+
+
 
 }
