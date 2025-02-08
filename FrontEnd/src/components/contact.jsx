@@ -97,7 +97,7 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2024 Skill🔗Link
+            &copy; 2025 Skill🔗Link
            
           </p>
         </div>
