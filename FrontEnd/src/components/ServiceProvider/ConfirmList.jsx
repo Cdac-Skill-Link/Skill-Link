@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { ServiceProviderNavbar } from './ServiceProviderNavBar';
 
 export default function ConfirmTable() {
   const navigate = useNavigate();
@@ -49,9 +50,11 @@ export default function ConfirmTable() {
 
   return (
     <div>
+      
+      <ServiceProviderNavbar/>
     <br></br>
     
-        <table className="table table-striped">
+        <table className="table table-striped" style={{marginTop: "100px"}}>
   <thead>
     <tr>
       <th scope='col'>Name First</th>
