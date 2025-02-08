@@ -87,8 +87,8 @@ body{
 
 .login-center p{
   font-weight: 400;
-  font-size: 2rem;
-  margin-bottom: 40px;
+  font-size: 1.2rem;
+ /* // margin-bottom: 40px; */
 }
 
 form input[type='email'],

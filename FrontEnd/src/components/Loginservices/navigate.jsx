@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, NavLink } from "react-router-dom";
 
 export const Navigate = () => {
     const username = sessionStorage["username"];
@@ -14,10 +14,16 @@ export const Navigate = () => {
 
     return (
         <>
+        
             <nav id="menu" className="navbar navbar-default navbar-fixed-top">
+            
                 <div className="container">
+                    
                     <div className="navbar-header">
                         {/* Skill🔗Finder logo with spacing */}
+                        <NavLink className="navbar-brand page-scroll brand-spacing" onClick={() => navigate(-1)} style={{ cursor: "pointer" }}>
+                              <i className="fa fa-arrow-circle-o-left fa-lg" aria-hidden="true"></i>
+                        </NavLink>
                         <a className="navbar-brand page-scroll brand-spacing" href="#page-top">
                             Skill🔗Finder
                         </a>
