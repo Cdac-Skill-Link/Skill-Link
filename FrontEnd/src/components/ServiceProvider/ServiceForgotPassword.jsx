@@ -33,7 +33,7 @@ const ServiceForgotPassword = () => {
       });
       
       alert("password updated")
-      navigate("/login")
+      navigate("/serviceprovider")
       setMessage(response.data.message);
     } catch (error) {
       setMessage('Error: Unable to process your request. Please try again later.');
