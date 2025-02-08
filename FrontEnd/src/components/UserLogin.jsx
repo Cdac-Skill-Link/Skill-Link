@@ -105,8 +105,9 @@ const Login = () => {
                 ) : (
                   <FaEye onClick={() => setShowPassword(!showPassword)} />
                 )}
-                {errors.password && <span className="error-message">{errors.password}</span>}
+               
               </div>
+              {errors.password && <span className="error-message">{errors.password}</span>}
 
               <div className="login-center-options">
                 <a href="forgotpassword" className="forgot-pass-link">
