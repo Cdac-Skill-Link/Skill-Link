@@ -2,6 +2,7 @@ import axios from "axios";
 import "../LoginForm.css";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { Navigate } from "./navigate";
 
 
 const ServiceForm = () => {
@@ -75,7 +76,9 @@ const ServiceForm = () => {
     };
 
     return (
-        <center className="login-center">
+        <>
+        <Navigate/>
+        <center className="login-center" style={{marginTop:"100px"}}>
             <h1>Skill🔗Link</h1>
             <h3><b>Hello {formData.namefirst}</b></h3>
             <div className="container">
@@ -118,6 +121,7 @@ const ServiceForm = () => {
                 </form>
             </div>
         </center>
+        </>
     );
 };
 
