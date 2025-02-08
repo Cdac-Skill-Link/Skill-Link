@@ -38,12 +38,15 @@ export const Contact = (props) => {
   return (
     <div>
       <div id="contact">
-        <div className="container">
+        <div className="container ">
         
 
 
-          <div>
-            <h3>Contact Info</h3>
+          <div >
+          <div >
+          <h2>Contact Info</h2>
+         
+        </div>
             <p>
                 <span>
                   <i className="fa fa-map-marker"></i> Address
