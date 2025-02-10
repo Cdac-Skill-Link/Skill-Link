@@ -91,10 +91,10 @@ export default function BookingTable() {
             <th>Last Name</th>
             <th>Phone Number</th>
             <th>Skills</th>
-            <th>Rating</th>
+            {/* <th>Rating</th> */}
             <th>Confirm</th>
             <th>Status</th>
-            <th>Rating</th>
+            {/* <th>Rating</th> */}
           </tr>
         </thead>
         <tbody>
@@ -104,7 +104,7 @@ export default function BookingTable() {
               <td>{ob.namelast}</td>
               <td>{ob.phonenumber}</td>
               <td>{ob.skills}</td>
-              <td>{ob.rating}/5</td>
+              {/* <td>{ob.rating}/5</td> */}
               <td>
                 <button
                   type="button"
@@ -126,11 +126,11 @@ export default function BookingTable() {
                 </button>
               </td>
               <td>{ob.status}</td>
-              <td>
+              {/* <td>
                 <Link to={`/feedback/${ob.sid}/${ob.namefirst}`}>
                   <button type="button" className="btn btn-info">Rate</button>
                 </Link>
-              </td>
+              </td> */}
             </tr>
           ))}
         </tbody>
